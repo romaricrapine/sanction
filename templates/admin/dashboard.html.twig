@@ -1,0 +1,15 @@
+{% extends '@EasyAdmin/layout.html.twig' %}
+
+{% block content %}
+
+    <div class="jumbotron">
+        {% if is_granted('ROLE_ADMIN') %}
+            <h1>Bienvenue  <b>Administrateur {{ ea.user }}</b> sur le dashboard Sanction/Warn d'Arcadia</h1>
+        {% elseif is_granted('ROLE_MJ') %}
+            <h1>Bienvenue <b>Maître du Jeu {{ ea.user }}</b> sur le dashboard Sanction/Warn d'Arcadia</h1>
+        {% else  %}
+            <h1>Bienvenue <b>Modérateur {{ ea.user }}</b> sur le dashboard Sanction/Warn d'Arcadia</h1>
+        {% endif %}
+    </div>
+
+{% endblock %}

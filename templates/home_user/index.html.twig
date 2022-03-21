@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="img"></div>
+
+    <h1 class="title">Connexion Sanction / Warn Arcadia</h1>
+
+    <div class="login">
+        {% if is_granted('ROLE_STAFF') %}
+            <a href="">Accès DashBoard</a>
+        {% else %}
+            <a href="{{ path('app_login') }}">Se connecter</a>
+        {% endif %}
+    </div>
+
+
+{% endblock %}

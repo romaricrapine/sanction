@@ -1,0 +1,29 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url("../../public/build/video/unknown.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10%;
+    color: #000000;
+    background-color: #6be7fc;
+    opacity: 75%;
+}
+
+.login {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login a {
+    font-size: 48px;
+    text-decoration: none;
+    color: #000000;
+    opacity: 75%;
+    font-weight: bold;
+}

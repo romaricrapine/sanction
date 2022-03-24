@@ -11,6 +11,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\UrlField;
 
 class SanctionPlayerCrudController extends AbstractCrudController
 {
@@ -26,7 +27,7 @@ class SanctionPlayerCrudController extends AbstractCrudController
             TextField::new('pseudo_player_sanction')->setLabel('Pseudo'),
             DateTimeField::new('date_sanction')->setLabel('Date')->setFormat('dd-MM-yyyy à HH\'h\'mm')->onlyWhenUpdating()->onlyOnIndex(),
             AssociationField::new('ReasonSanction')->setLabel('Raison')->setRequired('true'),
-            TextField::new('screen_sanction')->setLabel('Screen'),
+            UrlField::new('screen_sanction')->setLabel('Screen'),
             AssociationField::new('TypeSanction')->setLabel('Type')->setRequired('true'),
             AssociationField::new('TimeSanction')->setLabel('Durée')->setRequired('true'),
             AssociationField::new('user')->setLabel('Staff')->setRequired('true'),

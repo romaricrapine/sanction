@@ -8,7 +8,7 @@
 
     <div class="login">
         {% if is_granted('ROLE_STAFF') %}
-            <a href="">Accès DashBoard</a>
+            <a href="{{ path('app_admin_dashboard') }}">Accès DashBoard</a>
         {% else %}
             <a href="{{ path('app_login') }}">Se connecter</a>
         {% endif %}

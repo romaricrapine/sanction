@@ -1,6 +1,6 @@
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-image: url("../../public/build/video/unknown.png");
+   /* background-image: url("../../public/build/video/unknown.png"); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
